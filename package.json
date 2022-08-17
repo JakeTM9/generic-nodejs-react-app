@@ -1,26 +1,27 @@
 {
-  "name": "nightwatch",
+  "name": "generic-nodejs-react-app",
   "version": "1.0.0",
-  "description": "\"# nightwatch\"",
+  "description": "\"# generic-nodejs-react-app\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm install && cd client && npm install",
+    "build": "cd client && npm run build",
     "start": "node server/index.js",
-    "build": "cd client && npm install && npm run build",
-    "install-dev": "npm install && cd client && npm install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JakeTM9/nightwatch.git"
+    "url": "git+https://github.com/JakeTM9/generic-nodejs-react-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JakeTM9/nightwatch/issues"
+    "url": "https://github.com/JakeTM9/generic-nodejs-react-app/issues"
   },
-  "homepage": "https://github.com/JakeTM9/nightwatch#readme",
+  "homepage": "https://github.com/JakeTM9/generic-nodejs-react-app#readme",
   "dependencies": {
     "express": "^4.18.1"
   }
 }
+
