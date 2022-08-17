@@ -4,8 +4,8 @@
   "description": "\"# generic-nodejs-react-app\"",
   "main": "index.js",
   "scripts": {
-    "install": "npm install && cd client && npm install",
-    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && npm ci && cd .. && npm ci",
+    "build": "cd client && npm ci & npm run build && cd ..",
     "start": "node server/index.js",
     "test": "jest --verbose ./tests"
   },
