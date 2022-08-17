@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install-all": "npm install && cd client && npm install && npm ci && cd .. && npm ci",
-    "build-pipeline": "cd client && npm ci & npm run build && cd ..",
+    "build-pipeline": "cd client && react-scripts build && cd ..",
     "start": "node server/index.js",
     "test": "jest --verbose ./tests"
   },
@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/JakeTM9/generic-nodejs-react-app#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "jest": "^28.1.3"
